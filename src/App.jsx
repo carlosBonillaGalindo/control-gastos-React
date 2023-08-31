@@ -4,11 +4,14 @@ import Header from './components/Header'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [presupuesto, setPresupuesto] = useState(5000)
 
   return (
    <div>
-    <Header></Header>
+    <Header
+      presupuesto={presupuesto}
+      setPresupuesto={setPresupuesto}
+    />
    </div>
   )
 }
